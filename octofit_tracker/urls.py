@@ -1,7 +1,8 @@
-"""octofit_tracker URL Configuration
+"""
+URL configuration for octofit_tracker project.
 
 The `urlpatterns` list routes URLs to views. For more information please see:
-    https://docs.djangoproject.com/en/4.1/topics/http/urls/
+    https://docs.djangoproject.com/en/5.2/topics/http/urls/
 Examples:
 Function views
     1. Add an import:  from my_app import views
@@ -15,19 +16,8 @@ Including another URLconf
 """
 
 from django.contrib import admin
-from django.urls import path, include
-from rest_framework.routers import DefaultRouter
-from . import views
-
-router = DefaultRouter()
-router.register(r'users', views.UserViewSet)
-router.register(r'teams', views.TeamViewSet)
-router.register(r'activities', views.ActivityViewSet)
-router.register(r'leaderboards', views.LeaderboardViewSet)
-router.register(r'workouts', views.WorkoutViewSet)
+from django.urls import path
 
 urlpatterns = [
-    path('', include(router.urls)),
-    path('api-root/', include(router.urls)),
     path("admin/", admin.site.urls),
 ]

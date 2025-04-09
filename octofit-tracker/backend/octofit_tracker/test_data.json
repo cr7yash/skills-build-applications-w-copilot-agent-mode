@@ -1,0 +1,19 @@
+{
+  "users": [
+    {"email": "john.doe@example.com", "name": "John Doe", "password": "password123"},
+    {"email": "jane.smith@example.com", "name": "Jane Smith", "password": "password456"}
+  ],
+  "teams": [
+    {"name": "Team Alpha", "members": ["john.doe@example.com", "jane.smith@example.com"]}
+  ],
+  "activities": [
+    {"user": "john.doe@example.com", "description": "Running", "duration": 30, "date": "2025-04-01"},
+    {"user": "jane.smith@example.com", "description": "Cycling", "duration": 45, "date": "2025-04-02"}
+  ],
+  "leaderboard": [
+    {"team": "Team Alpha", "points": 100}
+  ],
+  "workouts": [
+    {"name": "Morning Yoga", "description": "A relaxing yoga session", "duration": 60}
+  ]
+}
