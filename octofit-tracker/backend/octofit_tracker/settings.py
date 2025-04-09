@@ -78,10 +78,12 @@ WSGI_APPLICATION = "octofit_tracker.wsgi.application"
 
 DATABASES = {
     'default': {
-        'ENGINE': 'djongo',
+        'ENGINE': 'django.db.backends.postgresql',  # Updated to use PostgreSQL
         'NAME': 'octofit_db',
+        'USER': 'your_username',  # Replace with your database username
+        'PASSWORD': 'your_password',  # Replace with your database password
         'HOST': 'localhost',
-        'PORT': 27017,
+        'PORT': 5432,  # Default PostgreSQL port
     }
 }
 
